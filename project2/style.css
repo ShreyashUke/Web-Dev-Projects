@@ -1,0 +1,232 @@
+/* css reset */
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+    --color-red: #ff6769;
+    --color-re: #fe7468;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    width: 109%;
+    
+    
+}
+
+#logo{
+    margin: 5px 2px;   
+}
+
+#logo img{
+
+    height: 100px;
+    width: 130px;
+    margin: -15px -10px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+      content: "";
+      background-color: #0b0b0b;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.9;
+}
+
+
+#navbar ul li{
+    color: black;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 36px 27px;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    background-color: var(--color-red);
+    color: rgb(0, 0, 0);
+}
+    
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 604px;
+    width: 880px;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(https://asanoyukiyasu.com/wp-content/uploads/2020/03/shortfilm3.jpg)  no-repeat center center/cover;
+    height: 125%;
+    width: 150%;
+    z-index: -2;
+    opacity: 0.82;
+    left: -465px;
+    top: 2px;
+    
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#home p{
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* Services Section */
+#services{
+    margin: 10px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid rgb(27, 27, 27);
+    padding: 34px;
+    margin: 3px 4px;
+    border-radius: 28px;
+    background-color: var(--color-re);
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+/* Clents Section */
+#client-section{
+height: 344px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(https://media.istockphoto.com/vectors/cinema-poster-with-audience-screen-and-red-curtains-vector-vector-id826261088?k=6&m=826261088&s=612x612&w=0&h=bfksvKI8yxwKGgfsR2PiNndFEUIF8sBC9clcR80N6XE=) no-repeat center center/cover;
+    width: 109%;
+    height: 346px;
+    z-index: -1;
+    opacity: 0.5;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 40px;
+}
+#clients img{
+    height: 124px;
+}
+#clients img{
+    height: 142px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 109%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(https://www.avonandsomerset.police.uk/media/14670393/taking-notes_web.jpg) no-repeat center center/cover;
+}
+#content-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+    margin: 5px;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    width: 1250px;
+
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4.8rem;
+    padding: 30px;
+}
+
+.h-secondary{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.8rem;
+    padding: 39px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgba(10, 10, 10, 0.699);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+
+
