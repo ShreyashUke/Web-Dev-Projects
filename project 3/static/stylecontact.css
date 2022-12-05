@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+.MyForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin: 18px;
+    
+}
+.MyInput{
+    width: 40%;
+    padding: 9px;
+    margin: 10px;
+    font-size: 17px;
+    border: 2px solid rgb(45, 38, 38);
+    border-radius:12px ;
+    outline: none;
+}
+.btn{
+    border: 2px solid black;
+    padding: 3px 12px;
+    border-radius: 5px;
+    background-color: #e12222;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    margin: 10px 0;
+}
+    
+
+.container{
+    font-family: 'Rubik Glitch', cursive;
+    padding: 97px 0;
+    outline: none;
+}
+
