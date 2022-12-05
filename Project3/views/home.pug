@@ -1,0 +1,48 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    section#introSection 
+        div  Welcome to Harry's dance academy 
+        div.small  Live Spleep Dance Repeat 
+
+    section#missionSection 
+      h2 Our Sponsors 
+      div.card 
+        h3   Dance Perfection 
+        div.card-box
+          div.card-img
+            img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX9MyGfo8MLA5cEYcAxhR5xEnVwObDVBH8aA&usqp=CAU", alt="")
+          div.card-content
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quisquam quas molestiae facilis debitis corporis.
+
+      div.card 
+        h3   Dance the way you like 
+        div.card-box
+          div.card-img
+            img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX9MyGfo8MLA5cEYcAxhR5xEnVwObDVBH8aA&usqp=CAU", alt="")
+          div.card-content
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quisquam quas molestiae facilis debitis corporis.
+      div.card 
+        h3   Expert Teaching 
+        div.card-box
+          div.card-img
+            img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX9MyGfo8MLA5cEYcAxhR5xEnVwObDVBH8aA&usqp=CAU", alt="")
+          div.card-content
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quisquam quas molestiae facilis debitis corporis.
+
+    section#sponsorsSection 
+      h2  Our Sponsors 
+      div#sponsors
+        img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1pf46N5bhe_qN0Y2tHrJGHi7gOvkx3ooF6Q&usqp=CAU", alt="Apple", class="spImage")
+        img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1pf46N5bhe_qN0Y2tHrJGHi7gOvkx3ooF6Q&usqp=CAU", alt="Apple", class="spImage")
+        img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1pf46N5bhe_qN0Y2tHrJGHi7gOvkx3ooF6Q&usqp=CAU", alt="Apple", class="spImage")
+      
+  
+      

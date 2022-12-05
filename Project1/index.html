@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Catalouge</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: rgb(45, 194, 221);
+        background: url('https://png.pngtree.com/thumb_back/fh260/background/20210916/pngtree-film-simple-light-effect-blue-gradient-background-image_901053.jpg');
+        font-family: cursive;
+    }
+    .left{
+        display: inline;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 34px;
+        top: 14px;
+    }
+    .left img{
+        width: 120px;
+        /* filter: invert(100%); */
+    }
+    .left div{
+        text-align: center;
+    }
+    .mid{
+        /* background: url(''); */
+        display: block;
+        width: 31%;
+        margin: 14px auto;
+        /* border: 2px solid green; */
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 14px;
+        display: inline;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        color: white;
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: rgb(236, 221, 10);
+        text-decoration: none;
+        padding: 34px 7px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{
+        margin: 0px 9px;
+        padding: 5px 8px;
+        border: 2px solid pink;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(75, 72, 72);
+    }
+    .container{
+        border: 2px solid red;
+        margin: 77px 36px;
+        padding: 35px;
+        width: 30%;
+        border-radius: 25px;
+        border-color: white;
+    }
+    .form.group input{
+        text-align: center;
+        display: block;
+        width: 320px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 7px auto;
+        border-radius: 20px;
+        font-family: cursive;
+    }
+    /* .container{
+        background: rgba(249, 166, 235, 0.225);
+    } */
+    .container h1{
+        text-align: center;
+        color: rgb(236, 221, 10)
+    }
+    .container button{
+        display: block;
+        width: 73%;
+        margin: 11px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="https://media.istockphoto.com/photos/check-list-note-pad-with-film-reel-on-chalkboard-background-3d-picture-id1138177489?k=20&m=1138177489&s=612x612&w=0&h=dSp-XNs4n6yJ8kIZ_GZFsX2av69ViOufEgO5R5PfoMc=" alt="">
+            <div>
+                Movie Catalouge
+            </div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <!-- <label for="mov">Movies</label> -->
+                <li class="find"><a href="#">Movies</a></li>
+                <select name="myMov" id="mov">
+                    <option value="odi">Odia</option>
+                    <option value="hin">Hindi</option>
+                    <option value="ben">Bengali</option>
+                    <option value="tel">Telagu</option>
+                    <option value="mal">Malyalam</option>
+                    <option value="tam">Tamil</option>
+                    <option value="mar">Marathi</option>
+                    <option value="eng">English</option>
+                    <option value="kan">Kannada</option>
+                    <option value="kor">Korean</option>
+                </select>
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="noactioin.php">
+            <div class="form group">
+                <input type="text" name="" maxlength="20" placeholder="Enter Your Name">
+            </div>
+            <div class="form group">
+                <input type="email" name="" placeholder="Enter Your Email">
+            </div>
+            <div class="form group">
+                <input type="number" maxlength="10" name="" placeholder="Enter Your Mobile number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
