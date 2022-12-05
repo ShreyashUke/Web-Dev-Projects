@@ -1,0 +1,47 @@
+extends base.pug
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    
+    section#introSection            
+        div Welcome to MoviesCat 
+        div.small Horror version webpage    
+
+    section#missionSection    
+        h2 Our Mission
+        .card 
+          h3  Movies 
+          .card-box 
+            .card-img 
+             img(src="https://work.alive.com/wp-content/themes/mytheme/assets/images/placeholder-logo.jpg", alt="")
+            .content
+              p Best Movies of the decade 
+        .card 
+          h3  Web-Series
+          .card-box 
+            .card-img 
+             img(src="https://work.alive.com/wp-content/themes/mytheme/assets/images/placeholder-logo.jpg", alt="")
+            .content
+              p Best Movies of the decade 
+        .card 
+          h3  TV Shows 
+          .card-box 
+            .card-img 
+             img(src="https://work.alive.com/wp-content/themes/mytheme/assets/images/placeholder-logo.jpg", alt="")
+            .content
+              p Best Movies of the decade   
+
+    section#sponsorSection    
+        h2 Our sponsors
+        div#sponsors
+         img(src="https://renopoliorun.files.wordpress.com/2017/05/your-logo-here.png", alt="sponse logo",class=spImage) 
+         img(src="https://renopoliorun.files.wordpress.com/2017/05/your-logo-here.png", alt="sponse logo",class=spImage) 
+         img(src="https://renopoliorun.files.wordpress.com/2017/05/your-logo-here.png", alt="sponse logo",class=spImage) 
+         img(src="https://renopoliorun.files.wordpress.com/2017/05/your-logo-here.png", alt="sponse logo",class=spImage) 
+        
+    

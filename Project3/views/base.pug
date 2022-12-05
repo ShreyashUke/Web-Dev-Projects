@@ -1,0 +1,22 @@
+//- layout.pug
+doctype html
+
+html
+  head
+    title Movies Catalogue
+    block scripts
+    block style
+  body
+    nav#navbar
+        ul
+            div#logo 
+                img(src="../static/logo.png", alt="logo")
+                | MoviesCat
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Contact us]
+            li #[a(href="/") More info]
+    block content
+    footer#footer 
+        | Copyright © 2022 MoviesCat.com | All rights reserved      

@@ -1,0 +1,59 @@
+//- index.pug
+doctype html
+html
+  head
+    title Movies Catalogue
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo 
+                img(src="../static/logo.png", alt="logo")
+                | MoviesCat
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Contact us]
+            li #[a(href="/") More info]
+    section#introSection            
+        div Welcome to MoviesCat 
+        div.small Horror version webpage    
+
+    section#missionSection    
+        h2 Our Mission
+        .card 
+          h3  Movies 
+          .card-box 
+            .card-img 
+             img(src="https://work.alive.com/wp-content/themes/mytheme/assets/images/placeholder-logo.jpg", alt="")
+            .content
+              p Best Movies of the decade 
+        .card 
+          h3  Web-Series
+          .card-box 
+            .card-img 
+             img(src="https://work.alive.com/wp-content/themes/mytheme/assets/images/placeholder-logo.jpg", alt="")
+            .content
+              p Best Movies of the decade 
+        .card 
+          h3  TV Shows 
+          .card-box 
+            .card-img 
+             img(src="https://work.alive.com/wp-content/themes/mytheme/assets/images/placeholder-logo.jpg", alt="")
+            .content
+              p Best Movies of the decade   
+
+    section#sponsorSection    
+        h2 Our sponsors
+        div#sponsors
+         img(src="https://renopoliorun.files.wordpress.com/2017/05/your-logo-here.png", alt="sponse logo",class=spImage) 
+         img(src="https://renopoliorun.files.wordpress.com/2017/05/your-logo-here.png", alt="sponse logo",class=spImage) 
+         img(src="https://renopoliorun.files.wordpress.com/2017/05/your-logo-here.png", alt="sponse logo",class=spImage) 
+         img(src="https://renopoliorun.files.wordpress.com/2017/05/your-logo-here.png", alt="sponse logo",class=spImage) 
+        
+
+    footer#footer 
+        | Copyright © 2022 MoviesCat.com | All rights reserved            
+    script
+      include ../static/index.js
