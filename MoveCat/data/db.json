@@ -1,0 +1,34 @@
+{
+  "blogs": [
+    {
+      "title": "My First Blog",
+      "body": "why do we fall, So we can rise up",
+      "author": "Amey",
+      "id": 1
+    },
+    {
+      "title": "My second Blog",
+      "body": "Power of the sun, in the palm of my hand ",
+      "author": "Dr.OcK",
+      "id": 2
+    },
+    {
+      "title": "This is  the new",
+      "body": "last one there was a mistake i hope this work",
+      "author": "yoshi",
+      "id": 4
+    },
+    {
+      "title": "Game Start",
+      "body": "Hellooo, It is Mario",
+      "author": "mario",
+      "id": 6
+    },
+    {
+      "title": "Game OVer",
+      "body": "This is Knight",
+      "author": "yoshi",
+      "id": 7
+    }
+  ]
+}
